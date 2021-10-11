@@ -121,60 +121,59 @@ body {
     flex-wrap: wrap;
     margin: 0;
     padding: 0;
-    text-align: center;
     outline: 5px solid rgba(255, 99, 78, 0.5);
     outline-offset: -5px;
  } 
+.container-dark-blue {
+    width: 400px;
+    height: 384px;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.advantages-item-dark-blue {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+/* 
  .first-advantages-list {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     margin: 0;
     padding: 0;
- }
+ /* } */
 
-.advantages-item-dark-blue {
+.bottom-adv {
     display: flex;
+    flex-direction: row;
+    align-content:center;
     justify-content: center;
+    flex-wrap: wrap;
     text-align: center;
-    Width: 1200px;
+}
+
+.first-advantages-list {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: bottom;
+    text-align: center;
+    align-content: bottom;
+}
+
+.advantages-item-blue {
+    Width: 400px;
+    height: 384px;
 }
 
 .advantages-item-light-blue {
     Width: 400px;
     height: 384px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    text-align: flex-end;
-  
-}
-
-.advantages-item-blue {
-    align-items: baseline;
-    Width: 400px;
-    height: 384px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-}
-
-.advantages-title {
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-start;
-    text-align: center;
-}
-.adventages-numb {
-    display: flex;
-    align-items: center;
-}
-.advantages-description {
-    display: flex;
-    justify-content: center;
-    align-items: flex-end; 
 }
 
 .first-screen-img {
@@ -214,11 +213,11 @@ body {
 }
 
 .first-screen {
-    background:
-    url("../image/vector.svg"),
+    background-image: url("../image/vector.svg"),
     url("../image/background/background-1.jpg");
+    background-position: 50% 75%, center;
     background-color: #FFFFFF;
-    background-size: 100% auto;
+    background-size: 100% auto, cover;
     background-repeat: no-repeat;
   }
 
