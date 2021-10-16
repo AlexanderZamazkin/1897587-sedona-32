@@ -6,7 +6,7 @@
     <link rel="stylesheet" href = "style/style.css">
 </head>
 <body>
-    <header class="page-header" >
+    <header class="page-header">        
         <nav class="navigation">
           <ul class="navigation-list">
             <li class="navigation-item">
@@ -48,7 +48,7 @@
         </nav>
       </header>
   
-        <main class="main-inner">
+      <main class="main-inner">
           <h1 class="visually-hidden">Подбор гостиниц Седоны</h1>
             <section class="catalog-filter">
               <div class="catalog-container">
@@ -63,8 +63,8 @@
                    <a class="breadcrumbs-link">Гостиницы</a>
                  </li>
                 </ul>
-                <form class="catalog-filter-search" action="https://echo.htmlacademy.ru/" method="get">
-                  <fieldset class="catalog-filter-group">
+                <form class="catalog-filter-search searching" action="https://echo.htmlacademy.ru/" method="get">
+                  <fieldset class="catalog-filter-group buildings">
                     <legend class="catalog-filter-title">Инфраструктура:</legend>
                     <ul class="catalog-filter-list">
                       <li class="catalog-filter-item">
@@ -89,9 +89,9 @@
                         </label>
                       </li>
                     </ul>
-                </fieldset>
+                  </fieldset>
     
-                  <fieldset class="catalog-filter-group">
+                  <fieldset class="catalog-filter-group living">
                     <legend class="catalog-filter-title">Тип жилья:</legend>
                    <ul class="catalog-filter-list">
                      <li class="catalog-filter-item">
@@ -118,7 +118,7 @@
                     </ul>
                   </fieldset>
 
-                  <fieldset class="catalog-filter-group">
+                  <fieldset class="catalog-filter-group sorting">
                    <legend class="catalog-filter-title">Стоимость,₽:</legend>
                    <button class="range-toggle toggle-min" type="button">
                      <span class="visually-hidden">Изменить минимальную цену.</span>
@@ -133,39 +133,42 @@
                       до <input class="catalog-filter-input" type="number" name="max-price">
                     </label>
                   </fieldset>
-
-                  <button class="button" type="submit">Применить</button>
-                  <button class="button button-reset" type="reset">Сбросить</button>
+                  <div class="button-function">
+                    <button class="button button-accept" type="submit">Применить</button>
+                    <button class="button button-reset" type="reset">Сбросить</button>
+                  </div>
                 </form>
               </div>
-              <form class="sorting-type" action="https://echo.htmlacademy.ru/" method="get">
-                <h3 class="sorting-hotel-number">найдено гостиниц:</h3>
-                <span class="sorting-hotel">38</span>
-                <label class="visually-hidden" for="sorting">Сортировка</label>
-                <select class="sorting-select-control" id="sorting" name="sorting">
-                 <option value="cheap">Сначала дешевые</option>
+              <div class="sorting-container">
+                <form class="sorting-type" action="https://echo.htmlacademy.ru/" method="get">
+                  <h3 class="sorting-hotel-number">найдено гостиниц:</h3>
+                  <span class="sorting-hotel">38</span>
+                  <label class="visually-hidden" for="sorting">Сортировка</label>
+                  <select class="sorting-select-control" id="sorting" name="sorting">
+                  <option value="cheap">Сначала дешевые</option>
                  <option value="popular">Сначала популярные</option>
                  <option value="expensive">Сначала дорогие</option>
-                </select>
-                <button class="visually-hidden" type="submit">Отсортировать продукты</button>
-              </form>
-              <ul class="sorting-list">
-                <li class="sorting-item">
-                  <a href="#" class="button">
-                    <span class="visually-hidden">Показать карточки</span>
-                  </a> 
-                </li>
-                <li class="sorting-item">
-                 <a href="#" class="button">
-                   <span class="visually-hidden">Показать карточку</span>
-                  </a>
-                </li>
-                <li class="sorting-item">
-                  <a href="#" class="button">
-                   <span class="visually-hidden">Показать список</span>
-                  </a>
-                </li>
-              </ul>
+                 </select>
+                  <button class="visually-hidden" type="submit">Отсортировать продукты</button>
+                </form>
+                <ul class="sorting-list">
+                  <li class="sorting-item">
+                    <a href="#" class="button">
+                      <span class="visually-hidden">Показать карточки</span>
+                    </a> 
+                  </li>
+                  <li class="sorting-item">
+                    <a href="#" class="button">
+                      <span class="visually-hidden">Показать карточку</span>
+                      </a>
+                    </li>
+                    <li class="sorting-item">
+                    <a href="#" class="button">
+                      <span class="visually-hidden">Показать список</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </section>
           <section class="hotel-desc">
             <h2 class="visually-hidden">Каталог гостиниц</h2>
@@ -288,37 +291,39 @@
               <button class="button" type="submit">подписаться</button>
             </form>
           </section>
-        </main>  
+    </main>  
       
-      <footer class="page-footer">
-        <div class="footer-social">
-          <ul class="footer-social-list">
-            <li class="footer-social-link">
-              <a class="button" href="#">
-                <span class="visually-hidden">Твиттер</span>
+        <footer class="page-footer">
+          <div class="page-footer-container">
+            <div class="footer-social">
+             <ul class="footer-social-list">
+                <li class="footer-social-link">
+                 <a class="button" href="#">
+                    <span class="visually-hidden">Твиттер</span>
+                  </a>
+               </li>
+               <li class="footer-social-link">
+                  <a class="button" href="#">
+                   <span class="visually-hidden">Фейсбук</span>
+                  </a>
+                </li>
+                <li class="footer-social-link">
+                  <a class="button" href="#">
+                    <span class="visually-hidden">Ютуб</span>
+                 </a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-number">
+              <a class="number-academy" href="tel:+78128121212">+7 812 812-12-12</a>
+            </div>
+            <div class="footer-academy-link">
+              <a class="academy-link" href="https://htmlacademy.ru/">
+                <img class="footer-image-link" src="image/logo/logo-htmlacademy.svg" alt="Логотип html academy">  
+                <span class="visually-hidden">Перейти на html academy</span>
               </a>
-            </li>
-            <li class="footer-social-link">
-              <a class="button" href="#">
-                <span class="visually-hidden">Фейсбук</span>
-              </a>
-            </li>
-            <li class="footer-social-link">
-              <a class="button" href="#">
-                <span class="visually-hidden">Ютуб</span>
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="footer-number">
-          <a class="number-academy" href="tel:+78128121212">+7 812 812-12-12</a>
-        </div>
-        <div class="footer-academy-link">
-          <a class="academy-link" href="https://htmlacademy.ru/">
-            <img class="footer-image-link" src="image/logo/logo-htmlacademy.svg" alt="Логотип html academy">  
-            <span class="visually-hidden">Перейти на html academy</span>
-          </a>
-        </div>
-      </footer>
+            </div>
+          </div>
+        </footer>
 </body>
 </html>
