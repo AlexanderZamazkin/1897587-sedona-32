@@ -350,7 +350,6 @@ body {
 
 .hotel-desc {
     width: 1200px; 
-    height:840px;
     margin-left: 71px;
 }
 
@@ -502,15 +501,14 @@ body {
 }
 
 .mailing {
-    width: 800px;
+    display: flex;
+    flex-direction: column;
     color:#242424;
     background-color:#FFFFFF;
     background-size: 100% auto;
     background-repeat: no-repeat;
     text-align: center;
-    justify-content: flex-end;
-    align-items: flex-end;
-    align-content: flex-end;
+    align-items: center;
 }
 
 .mailing-bg { 
