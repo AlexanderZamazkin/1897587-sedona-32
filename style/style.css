@@ -18,7 +18,7 @@ html {
     height: 100%;
 }
 
-.main-container {
+.page-main {
     flex-grow: 1;
 }
 
@@ -60,7 +60,16 @@ body {
     font-size: 16px;
 }
 
-.page-container {
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    background-color: #FFFFFF;
+    padding: 0;
+}
+
+.catalog-conainer {
+    display: flex;
+    flex-direction: column;
     width: 1200px;
     margin: 0 auto;
     background-color: #FFFFFF;
@@ -181,7 +190,6 @@ body {
 
 .advantages-item-white {
     Width: 400px;
-    /* height: 384px; */
     color: #242424;
     background: #FFFFFF;
     display: flex;
@@ -306,8 +314,6 @@ body {
   }
 
 .catalog-container {
-    margin: 0 auto;
-    width: 1200px;
     color: #FFFFFF;
     background-color: blue;
     background-image: url("../image/background/catalog-background.png") ;
@@ -323,6 +329,7 @@ body {
 }
 
 .main-inner {
+    flex-grow: 1;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -333,10 +340,10 @@ body {
     line-height: 23px;
     font-weight:400;
     text-transform: none;
+    width: 1200px;
 }
 
 .hotel-desc {
-    width: 1200px; 
     margin-left: 71px;
 }
 
