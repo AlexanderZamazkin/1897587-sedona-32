@@ -81,11 +81,28 @@ body {
 }
 
 .navigation-list {
-    width: 375px;
+    display: flex;
+    flex-wrap: wrap; 
+    width: 450px;
+    margin: 0;
+    padding: 0;
     list-style-type: none;
 }
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+
 .navigation-link {
+    display: block;
+    padding: 19px 33px;
     color: #000000;
     font-size: 20px;
     line-height: 26px;
@@ -95,11 +112,23 @@ body {
 }
 
 .navigation-user {
-    max-width: 250px;
-    margin-left: auto;  
+    max-width: 400px;
+    margin-left: auto;
+    min-width: 18px;
+    min-height: 22px;  
+    align-items: center;
+    align-content: center;
+}
+
+.main-header-logo {
+    margin-left: 75px;
+    height: 70px;
 }
 
 .place-button{
+    padding: 0px;
+    width: 160px;
+    height: 37px;
     color: #FFFFFF;
     font-family: inherit;
     font-size: 16px;
@@ -121,6 +150,7 @@ body {
     background-color: #756257;
     text-decoration: none;
     text-transform: uppercase;
+    margin-bottom: 91px;
 }
 
 .advantages-list {
@@ -202,6 +232,7 @@ body {
 .first-screen-img {
     margin-top: 51px;
     margin-left: 371px;
+    margin-bottom: 82px;
 }
 
 .hotel-card-link {
@@ -213,6 +244,7 @@ body {
 }
 
 .searching-title {
+    margin: 0;
     color: #000000;
     font-size: 30px;
     line-height: 36px;
@@ -221,6 +253,7 @@ body {
     text-transform: uppercase;
 }
 .searching-text {
+    margin-top: 91px;
     display: flex;
     flex-direction: column;
     align-items:center;
@@ -234,12 +267,14 @@ body {
     font-weight: 700;
     text-align: center;
     text-transform: uppercase;
+    margin: 0;
+    margin-top: 94px;
 }
 
 .first-screen {
     background-image: url("../image/vector.svg"),
     url("../image/background/background-1.jpg");
-    background-position: 50% 75%, center;
+    background-position: left 0px top 428px, top;
     background-color: #FFFFFF;
     background-repeat: no-repeat;
   }
@@ -248,7 +283,12 @@ body {
     background-color: #FFFFFF;
 }
 
+.description-first{
+    padding-top: 63px;
+}
+
 .first-screen-title{
+    margin: 0;
     color:#000000;
     font-weight: bold;
     font-size: 30px;
@@ -263,6 +303,7 @@ body {
     font-size: 22px;
     line-height: 36px;
     text-align: center;
+    margin-bottom: 79px;
 }
 
 .advantages-description {
@@ -298,6 +339,20 @@ body {
 .footer-number {
     width: 720px;
     text-align: center;
+}
+
+.footer-social-link {
+    width: 20px;
+    height: 18px;
+    margin-right: 29px;
+}
+
+.footer-social-list {
+    display: flex;
+    flex-wrap: wrap; 
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
 }
 
 .page-footer-container {
