@@ -94,15 +94,6 @@ body {
     display: flex;
 }
 
-.navigation-link-current-main {
-    width: 70px;
-}
-
-.navigation-item-current-main {
-    padding: 0;
-    padding-top: 19px;
-    border-bottom:2px solid #756257;
-}
 
 .navigation-list {
     display: flex;
@@ -144,6 +135,18 @@ body {
     align-content: center;
 }
 
+.navigation-link-current-main {
+    padding: 0; 
+    padding-top: 19px;
+}
+
+.navigation-item-current-main {
+    width: 70px;
+    border-bottom:2px solid #756257;
+    margin-left: 33px;
+    margin-right: 33px;
+}
+
 .navigation-item-current-hostel{
     width: 93px;
     margin-left: 33px;
@@ -156,7 +159,8 @@ body {
 }
 
 .main-header-logo {
-    margin-left: 75px;
+    position: absolute;
+    margin-left: 531px;
     height: 70px;
 }
 
@@ -180,6 +184,8 @@ body {
 }
 
 .searcing-button {
+    width: 575px;
+    height: 30px;
     color: #FFFFFF;
     font-family: inherit;
     font-size: 20px;
@@ -189,30 +195,31 @@ body {
     background-color: #756257;
     text-decoration: none;
     text-transform: uppercase;
-    margin-bottom: 91px;
+    margin-left: 312px;
+    border: none;
+    border-radius: 10px;
+    padding-top: 13px;
+    padding-bottom: 17px;
 }
 
 .advantages-list {
     display: flex;
     flex-direction: column;
     padding: 0;
+    margin: 0;
     list-style-type: none;
  } 
 .container-dark-blue {
     background: rgba(131, 179, 211, 0.2);
     width: 400px;
-    height: 384px;
     display: flex;
     flex-direction: column;
-    align-items:center;
-    justify-content: center;
     text-align: center;
 }
 .advantages-item-dark-blue {
     color:#FFFFFF;;
     background: #83B3D3;
     display: flex;
-    justify-content: flex-end;
     flex-wrap: wrap;
 }
 
@@ -220,23 +227,21 @@ body {
     background: rgba(131, 179, 211, 0.2);
     display: flex;
     flex-direction: column;
-    align-items:center;
-    justify-content: center;
     text-align: center;
     width: 400px;
-    height: 384px;
 }
 
 .bottom-adv {
     display: flex;
     flex-direction: row;
-    align-items:center;
-    justify-content: center;
     text-align: center;
 }
 
+.adventages-numb {
+    padding-bottom: 4px;
+}
+
 .first-advantages-list {
-    height: 384px;
     padding: 0;
     background-color: #FFFFFF;
     display: flex;
@@ -247,13 +252,10 @@ body {
 
 .advantages-item-light-blue {
     Width: 400px;
-    height: 384px;
     color: #242424;
     background: rgba(131, 179, 211, 0.12);
     display: flex;
     flex-direction: column;
-    align-items:center;
-    justify-content: center;
     text-align: center;
 }
 
@@ -263,9 +265,25 @@ body {
     background: #FFFFFF;
     display: flex;
     flex-direction: column;
-    align-items:center;
-    justify-content: center;
     text-align: center;
+}
+
+.icon-living {
+    width: 75px;
+    margin-left: 163px;
+    margin-top: 89px;
+}
+
+.icon-food {
+    width: 74px;
+    margin-left: 163px;
+    margin-top: 91px;
+}
+
+.icon-souvenir {
+    width: 64px;
+    margin-left: 168px;
+    margin-top: 85px;
 }
 
 .first-screen-img {
@@ -283,6 +301,7 @@ body {
 }
 
 .searching-title {
+    width: 720px;
     margin: 0;
     color: #000000;
     font-size: 30px;
@@ -290,36 +309,49 @@ body {
     font-weight: 700;
     text-align: center;
     text-transform: uppercase;
+    padding-bottom: 14px;
+    margin-left: 240px;
 }
+.desc {
+    width: 720px;
+    margin-top: 15px;
+    margin-bottom: 73px;
+    margin-left: 240px;
+}
+
+
 .searching-text {
-    margin-top: 91px;
+    padding-top: 91px;
+    padding-bottom: 91px;
     display: flex;
     flex-direction: column;
-    align-items:center;
-    justify-content: center;
     text-align: center;
 }
 
 .mailing-title {
+    width: 720px;   
     font-size: 30px;
     line-height: 36px;
     font-weight: 700;
     text-align: center;
     text-transform: uppercase;
+    padding-bottom: 14px;
     margin: 0;
     margin-top: 89px;
-    width: 720px;
-    height: 50px;   
+    margin-left: 240px;
 }
 
 .mailing-desc {
     width: 720px;
-    height: 72px;
+    padding-bottom: 31px;
     margin-top: 15px;
     margin-bottom: 26px;
+    margin-left: 240px;
 }
 
 .appointment-form-mail {
+    width: 600px;
+    margin:0;
     background: #F2F2F2;
 }
 
@@ -354,6 +386,7 @@ body {
     line-height: 36px;
     text-align: center;
     text-transform: uppercase;
+    padding-bottom: 8px;
 }
 
 .first-screen-text {
@@ -366,8 +399,14 @@ body {
 }
 
 .advantages-description {
-    align-items: center;
+    width: 220px;
+    padding-bottom: 11px;
+    margin-left: 90px;
+    margin-top: 26px;
+    margin-bottom: 77px;
+
 }
+
 
 .advantages-title{
     color: #FFFFFF;;
@@ -375,6 +414,9 @@ body {
     font-size: 24px;
     line-height: 28px;
     text-transform: uppercase;
+    padding-bottom: 4px;
+    margin-top: 98px;
+    margin-bottom: 25px;
 }
 
 .advantages-title-desc {
@@ -383,6 +425,28 @@ body {
     font-size: 24px;
     line-height: 28px;
     text-transform: uppercase;
+    margin-top: 23px;
+    margin-bottom: 20px;
+}
+
+.advantages-desc {
+    width: 250px;
+    margin: 0;
+    padding-bottom: 11px;
+    margin-left: 75px;
+    margin-bottom: 79px;
+}
+
+.bottom-text {
+    margin-top: 26px;
+    padding-bottom: 32px;
+    margin-bottom: 77px;
+}
+
+.bottom-title {
+    margin-top: 98px;
+    margin-bottom: 25px;
+    padding-bottom: 4px;
 }
 
 .number-academy {
@@ -397,6 +461,7 @@ body {
 
 .footer-number {
     width: 720px;
+    height: 50px;
     text-align: center;
 }
 
@@ -416,10 +481,14 @@ body {
 
 .page-footer-container {
     display: flex;
+    padding-top: 40px;
 }
 .footer-social {
     width: 107px;
+    display: flex;
+    flex-wrap: wrap;
     margin-right: 61px;
+    margin-left: 72px;
 }
 
 .footer-academy-link {
@@ -688,11 +757,10 @@ body {
     background-size: 100% auto;
     background-repeat: no-repeat;
     text-align: center;
-    align-items: center;
+    padding-bottom: 138px;
 }
 
 .mailing-bg { 
-    align-items:center;
     justify-content: center;
     text-align: center;
     display: flex;
@@ -701,7 +769,25 @@ body {
     background-color:#242424;
     background-image: url("../image/background/background-2.jpg");
     background-repeat: no-repeat;
+    padding-bottom: 94px;
 } 
+
+.posting {
+    width: 800px;
+    margin-left: 200px;
+    display:flex;
+    border-radius: 0px 10px 10px 0px;
+    background: #F2F2F2;
+}
+
+
+.posting-mail {
+    width: 559px;
+    height: 60px;
+    border: 0;
+    padding: 0;
+    background: #F2F2F2;
+}
 
 .pagination {
     display: flex;
