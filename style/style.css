@@ -83,8 +83,6 @@ body {
     border-radius: 4px;
 }
 
-
-
 .container {
     width: 1200px;
     margin: 0 auto;
@@ -118,6 +116,7 @@ body {
   }
 
 .navigation-link {
+    outline: none;
     position: relative;
     display: block;
     padding: 19px 33px;
@@ -138,18 +137,7 @@ body {
     align-content: center;
 } 
 
-.navigation-icon {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    margin: auto;
-    fill: #DBDBDB;
-}
-
 .footer-academy-icon {
-    position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
@@ -157,40 +145,108 @@ body {
     margin: auto;
     width: 115px ;
     height: 33px;
-    fill: #DBDBDB;
-}
-
-.favorites {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 16px;
-    left: 12px;
-    fill: #DBDBDB;
+    fill: #000000;
 }
 
 .navigation-link-current-main {
-    padding: 0; 
-    padding-top: 19px;
+    width: 70px;
+    height: 42px;
+    padding: 0;
+    margin-top: 19px;
 }
 
 .navigation-item-current-main {
     margin-right: 33px;
-    width: 70px;
-    border-bottom:2px solid #756257;
+    display: flex;
+    justify-content: center;
 }
 
 .navigation-item-current-hostel{
     margin-right: 33px;
     width: 93px;
-    border-bottom:2px solid #756257;
+}
+.navigation-item-current-hostel:active {
+    border-bottom: 2px solid #756257;
+}
+
+.navigation-link-current-main:active {
+    border-bottom: 2px solid #756257;
+}
+
+.navigation-link-current-main:hover {
+    color: #756257;
+}
+
+.navigation-link-current-main:focus {
+    box-shadow: inset 0 0 0 3px #83B3D3;
+    outline: none;
+    border-radius: 10px;
+    color: #756257;
+}
+
+.navigation-item:focus {
+    box-shadow: inset 0 0 0 3px #83b3d3;
+    outline: none;
+    border-radius: 10px;
+}
+
+.navigation-icon {
+    fill: #000000;
+}
+
+.navigation-icon:hover {
+    fill: #756257;
+}
+
+.user-link:focus .navigation-icon{
+    fill: #756257;
+}
+
+.user-link:focus {
+    box-shadow: inset 0 0 0 3px #83B3D3;
+    outline: none;
+    border-radius: 10px;
+}
+
+.button:focus {
+    box-shadow: inset 0 0 0 3px #83B3D3;
+    outline: none;
+    border-radius: 4px;
+    background: #615048;
+}
+
+.button:hover {
+    background: #615048;
+}
+
+.searching-button:focus {
+    box-shadow: inset 0 0 0 3px #83B3D3;
+    outline: none;
+    border-radius: 10px;
+}
+
+.subscribe:hover {
+    box-shadow: inset 0 0 0 3px solid #756257;
+    outline: none;
+    border-radius: 0px 10px 10px 0px;
+    background:  #68A2CA;
+}
+
+.subscribe:focus {
+    box-shadow: inset 0 0 0 3px solid #756257;;
+    outline: none;
+    border-radius: 0px 10px 10px 0px;
+    background: #68A2CA;
 }
 
 .user-link{
-    width: 18px;
-    height: 18px;
-    margin-right: 21px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 38px;
+    height: 38px;
     padding: 0;
+    margin-right: 5px;
 }
 
 .navigation-link:nth-last-child(-n+1){
@@ -234,7 +290,7 @@ body {
     padding-bottom: 10px;
 }
 
-.searcing-button {
+.searching-button {
     width: 575px;
     height: 30px;
     color: #FFFFFF;
@@ -349,6 +405,15 @@ body {
 
 .sorting-item {
     background-color: #FFFFFF;
+    width: 48px;
+    height: 48px;
+    border: 2px solid #E6E6E6;
+    box-sizing: border-box;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 8px;
 }
 
 .searching-title {
@@ -403,7 +468,20 @@ body {
 .appointment-form-mail {
     width: 600px;
     margin:0;
-    background: #F2F2F2;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.appointment-form-mail:active {
+    box-shadow: inset 0 0 0 2px #000000;
+    background:#FFFFFF;
+}
+
+.appointment-form-mail:focus {
+    box-shadow: inset 0 0 0 3px #83B3D3;
+}
+
+.posting-mail:active {
+    background:#FFFFFF;
 }
 
 .subscribe {
@@ -501,7 +579,13 @@ body {
 }
 
 .number-academy {
+    width: 361px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color:#000000;
+    background-color: #FFFFFF;
     font-weight: 400;
     font-size: 40px;
     line-height: 40px;
@@ -510,27 +594,106 @@ body {
     text-transform: uppercase;
 }
 
-.footer-number {
-    width: 720px;
-    height: 50px;
-    text-align: center;
+.number-academy:hover {
+    color: #756257;
+    background: #FFFFFF;
 }
 
-.footer-social-link{
-    position: relative;
-    width: 20px;
-    height: 18px;
-    margin-right: 29px;
+.number-academy:focus {
+    color: #756257;
+    background: #FFFFFF;
+    box-shadow: inset 0 0 0 3px #83b3d3;
+    outline: none;
+    border-radius: 10px;
+}
+
+.footer-number {
+    width: 720px;
+    display: flex;
+    justify-content: center;
+}
+
+.social-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: #FFFFFF;
+}
+
+.social-icon:hover{
+    fill: #68A2CA;
+    background-color:#FFFFFF;
+}
+
+.social-button:hover {
+    fill: #68A2CA;
+    background-color:#FFFFFF;
+}
+
+.social-icon:focus {
+    fill: #68A2CA;
+}
+
+.social-button:focus {
+    box-shadow: inset 0 0 0 3px #68A2CA;
+    outline: none;
+    border-radius: 10px;
+    background-color:#FFFFFF;
+}
+.social-button:focus .social-icon {
+    fill: #68A2CA;
+}
+
+.academy-button {
+    width: 160px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFFFF;
+}
+
+.academy-button:hover {
+    background-color: #FFFFFF;
+    fill:#756257;
+}
+
+.footer-academy-icon:hover {
+    background-color: #FFFFFF;
+    fill:#756257;
+}
+
+.academy-button:focus .footer-academy-icon{
+    background-color: #FFFFFF;
+    fill:#756257;
+}
+.academy-button:focus{
+    box-shadow: inset 0 0 0 3px #83B3D3;
+    outline: none;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+}
+
+.footer-social-link {
+    width: 40px;
+    height: 40px;
+}
+
+.footer-social-link:focus {
+    box-shadow: inset 0 0 0 3px #83B3D3;
+    outline: none;
+    border-radius: 10px;
 }
 
 .social-icon {
-    position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
     margin: auto;
-    fill: #DBDBDB;
+    fill: #83B3D3;
 }
 
 .footer-social-list {
@@ -543,22 +706,22 @@ body {
 
 .page-footer-container {
     display: flex;
-    padding-top: 40px;
-    padding-bottom: 30px;
+    padding-top: 30px;
+    padding-bottom: 20px;
 }
 .footer-social {
     max-width: 200px;
     display: flex;
     flex-wrap: wrap;
+    padding-top: 10px;
     margin-right: 21px;
     margin-left: 72px;
-    padding-top: 10px;
 }
 
 .footer-academy-link {
     width: 150px;
     margin-left: 53px;
-    position: relative;
+
 }
 
 .academy-link {
@@ -684,11 +847,11 @@ body {
 
 
 .sorting-type {
-    margin-top: 50px;
     display: flex;
 }
 
 .sorting-select-control {
+    margin-top: 44px;
     margin-left: 192px;
     height: 47px;
     width: 287px;
@@ -711,9 +874,11 @@ body {
 }
 
 .breadcrumbs {  
+    display: flex;
     margin: 0 auto;
     color: #FFFFFF;
     list-style-type: none;
+    padding-left: 0;
     margin-left: 73px;
     margin-top: 5px;
 }
@@ -724,14 +889,23 @@ body {
     font-weight: 400;
 }
 
+.breadcrumbs-item {
+    margin-right: 11px;
+}
+
+.main-transition-icon {
+    margin-right: 7px;
+}
+
 .sorting-hotel-number {
+    width: 305px;
     color:#000000;
     font-size: 30px;
     line-height: 39px;
     font-weight: 700;
     text-transform: uppercase;
     margin: 0;
-    width: 305px;
+    margin-top: 50px;
 }
 
 .sorting-hotel {
@@ -740,6 +914,7 @@ body {
     line-height: 39px;
     font-weight: 700;
     text-transform: uppercase;
+    margin-top: 50px;
 }
 
 .hotel-card {
@@ -795,10 +970,16 @@ body {
 }
 
 .sorting-list {
+    display: flex;
     color:#242424;
     background-color: #FFFFFF;
     list-style-type: none;
+    margin: 0;
+    margin-top: 44px;
+    margin-left: 81px;
+    padding: 0;
 }
+
 
 .hotel-rating{
     color:#242424;
@@ -817,6 +998,14 @@ body {
     padding-bottom: 10px;
     padding-top: 9px;
     height: 18px;
+}
+
+.hotel-rating-stars {
+    background-image: url("../image/background/stars.svg");
+    width: 72px;
+    height: 17px;
+    position: absolute;
+    margin-left: 930px;
 }
 
 .mailing {
@@ -841,17 +1030,18 @@ body {
     width: 800px;
     margin-left: 200px;
     display:flex;
-    border-radius: 0px 10px 10px 0px;
+    border-radius: 10px 10px 10px 10px;
     background: #F2F2F2;
 }
 
 
 .posting-mail {
     width: 559px;
-    height: 60px;
     border: 0;
     padding: 0;
     background: #F2F2F2;
+    outline: none;
+    margin-top: 22px;
 }
 
 .pagination {
