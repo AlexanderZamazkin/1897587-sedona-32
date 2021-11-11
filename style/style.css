@@ -54,20 +54,9 @@ body {
     flex-direction: column;
     background-color: #756257;
     justify-content: flex-end;
-    margin-top: 31px;
+    margin-top: 38px;
     width: 151px;
     margin-left: 36px;
-    border-radius: 4px;
-}
-
-.hotel-card-button {
-    display: flex;
-    font-size: 16px;
-    flex-direction: column;
-    justify-content: flex-end;
-    margin-top: -36px;
-    width: 160px;
-    margin-left: 195px;
     border-radius: 4px;
 }
 
@@ -181,7 +170,7 @@ body {
     border-radius: 10px;
 }
 
-.navigation-link-current-main:before {
+.main-link:before {
     position: absolute;
     right: 11px;
     bottom: -15px;
@@ -194,7 +183,7 @@ body {
 .navigation-link-current-hostel:before {
     position: absolute;
     right: 0px;
-    bottom: -19px;
+    bottom: -21px;
     left: 0px;
     height: 2px;
     background-color:#756257;;
@@ -222,6 +211,18 @@ body {
 
 .user-link:focus .navigation-icon{
     fill: #756257;
+}
+
+.navigation-icon-favorites {
+    position: absolute;
+    left: 22px;
+    bottom: 19px;
+}
+
+.navigation-icon-numbers {
+    position: absolute;
+    bottom: 25px;
+    left: 27px;
 }
 
 .user-link:focus {
@@ -262,6 +263,42 @@ body {
     background: #68A2CA;
 }
 
+.hotel-card-button {
+    display: flex;
+    font-size: 16px;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-top: -36px;
+    width: 160px;
+    margin-left: 195px;
+    border-radius: 4px;
+}
+
+.hotel-card-button:focus {
+    box-shadow: inset 0 0 0 3px #756257;
+    outline: none;
+    border-radius: 4px;
+    background: #68A2CA;
+}
+
+.hotel-card-button:hover {
+    box-shadow: inset 0 0 0 1px #756257;
+    outline: none;
+    border-radius: 4px;
+    background: #68A2CA;
+}
+
+.hotel-button-accept:hover {
+    background: #6C9E42;
+}
+
+.hotel-button-accept:focus {
+    box-shadow: inset 0 0 0 3px #756257;
+    outline: none;
+    border-radius: 4px;
+    background: #6C9E42;
+}
+
 .user-link{
     display: flex;
     justify-content: center;
@@ -281,6 +318,7 @@ body {
     position: absolute;
     margin-left: 531px;
     height: 70px;
+    outline: none;
 }
 
 .user-item {
@@ -435,13 +473,44 @@ body {
 }
 
 .hotel-card-link {
+    height: 120px;
     background-color: #FFFFFF;
+    text-decoration: none;
 }
 
+.title-link {
+    display: block;
+    width: 239px;
+    height: 51px;
+    margin-left: 21px;
+    margin-top: -13px;
+    margin-bottom: -12px;
+}
+
+.hotel-card-link:focus{
+    box-shadow: 0 0 0 3px #83B3D3;
+    outline: none;
+}
+
+.hotel-card-link:hover .hotel-card-image {
+    opacity: 0.6;
+}
+
+.hotel-card-image:focus {
+    outline: none;
+}
+
+.title-link:hover .hotel-card-title{
+    color: #756257;
+}
+
+.title-link:focus {
+    box-shadow: 0 0 0 3px #83b3d3;
+    outline: none;
+    border-radius: 10px;
+}
 .sorting-item {
     background-color: #FFFFFF;
-    width: 48px;
-    height: 48px;
     border: 2px solid #E6E6E6;
     box-sizing: border-box;
     border-radius: 4px;
@@ -449,6 +518,26 @@ body {
     align-items: center;
     justify-content: center;
     margin-right: 8px;
+}
+
+.sorting-item:hover {
+    border: 2px solid #83B3D3;
+    border-radius: 4px;
+    outline: none;
+}
+
+.card-grid-toggle {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-grid-toggle:focus {
+    box-shadow: 0 0 0 2px #83B3D3;
+    outline: none;
+    border-radius: 4px;
 }
 
 .searching-title {
@@ -867,25 +956,48 @@ body {
     border-radius: 4px;
 }
 
+.button.button-accept:hover {
+    background: #68A2CA;
+}
+
+.button.button-accept:focus {
+    box-shadow: inset 0 0 0 3px #FFFFFF;
+    outline: none;
+    border-radius: 4px;
+    background: #68A2CA;
+}
+
 .button-reset {
     border: none; 
     background-color: transparent;
-    margin-left: 81px;
+    margin-left: 108px;
     margin-bottom: 83px;
-    width: 160px;
-    height: 23px;
+    width: 100px;
+    height: 32px;
     font-weight: 400;
     font-size: 18px;
     line-height:24px;
     text-transform: none;
 }
 
+.button-reset:hover {
+    opacity: 0.6;
+    background: none;
+}
+
+.button-reset:focus {
+    box-shadow: inset 0 0 0 3px #83B3D3;
+    outline: none;
+    border-radius: 4px;
+    background: none;
+}
 
 .sorting-type {
     display: flex;
 }
 
 .sorting-select-control {
+    padding-left:19px;
     margin-top: 44px;
     margin-left: 192px;
     height: 47px;
@@ -893,6 +1005,18 @@ body {
     border: 2px solid #E6E6E6;
     box-sizing: border-box;
     border-radius: 4px;
+}
+
+.sorting-select-control:hover {
+    border: 2px solid #83B3D3;
+    outline: none;
+    border-radius: 4px;
+}
+
+.sorting-select-control:focus {
+    border: 2px solid #83B3D3;
+    outline: none;
+    border-radius: 4px; 
 }
 
 .catalog-subject {
@@ -922,6 +1046,7 @@ body {
     color: inherit;
     font-size: 16px;
     font-weight: 400;
+    text-decoration: none;
 }
 
 .breadcrumbs-item {
@@ -968,17 +1093,17 @@ body {
 
 
 .hotel-card-title {
-    color:#000000;
+    color: #000000;
     font-size: 24px;
     line-height: 31px;
     font-weight: 700;
     text-transform: none;
     margin: 0;
-    margin-left: 37px;
-    margin-bottom: 1px;
-}
-.hotel-card-link {
-    text-decoration: none;
+    margin-left: 15px;
+    display: flex;
+    align-items: center;
+    height: 51px;
+    position: absolute;
 }
 
 .hotel-card-type-living{
@@ -1112,6 +1237,16 @@ body {
     border-radius: 4px;
 }
 
+.pagination-link:hover {
+    background: #68A2CA;
+}
+
+.pagination-link:focus {
+    box-shadow: inset 0 0 0 3px #756257;
+    background: #68A2CA;
+    outline: none;
+}
+
 .pagination-show-more {
     width: 625px;
     height:55px;
@@ -1124,6 +1259,18 @@ body {
     border: none;
     border-radius: 4px;
 }
+
+.pagination-show-more:hover {
+    background: #68A2CA;
+}
+
+.pagination-show-more:focus {
+    box-shadow: inset 0 0 0 3px #756257;
+    border-radius: 10px;
+    background: #68A2CA;
+}
+
+
 
 .last-page {
     padding-left: 18px;
@@ -1142,6 +1289,18 @@ body {
     border: 2px solid #E6E6E6;
     box-sizing: border-box;
     border-radius: 4px;
+}
+
+.page-amount-number:hover {
+    box-shadow: 0 0 0 2px #83B3D3;
+    border-radius: 4px;
+    outline: none;
+}
+
+.page-amount-number:focus {
+    box-shadow: 0 0 0 2px #83B3D3;
+    border-radius: 4px;
+    outline: none;
 }
   
 .pagination-current {
