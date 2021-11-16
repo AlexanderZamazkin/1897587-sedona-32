@@ -1217,10 +1217,9 @@
     }
 
     .sorting-select-control {
-        font-family: PT Sans;
+        font-family: PT Sans, sans-serif;
         font-size: 18px;
         font-weight: 400;
-        padding-top: 5px;
         padding-left:15px;
         margin-top: 44px;
         margin-left: 192px;
@@ -1229,6 +1228,19 @@
         border: 2px solid #E6E6E6;
         box-sizing: border-box;
         border-radius: 4px;
+        appearance: none;
+        position: relative;
+    }
+
+    .sorting-select-container::before {
+        z-index: 1;
+        content: '';
+        position: absolute;
+        top: 472px;
+        left: 854px;
+        background-image: url("../image/arrow.svg");
+        width: 12px;
+        height: 7px;
     }
 
     .sorting-select-control:hover {
@@ -1563,6 +1575,18 @@
         border: 2px solid #E6E6E6;
         box-sizing: border-box;
         border-radius: 4px;
+        appearance: none;
+    }
+
+    .page-amount-container::after {
+        z-index: 1;
+        content: '';
+        position: absolute;
+        top: 1436.98px;
+        left: 1095px;
+        background-image: url("../image/arrow.svg");
+        width: 12px;
+        height: 7px;
     }
 
     .page-amount-number:hover {
@@ -1615,6 +1639,7 @@
         content: ''; 
         position: absolute; 
         left: 189px; 
+        top: -8px;
         bottom: 222px; 
         background-image: url("../image/popover-img/arrow.svg");
         width: 20px;
@@ -1639,7 +1664,7 @@
         line-height: 21px;
         background: #756257;
         border-radius: 0 0 20px 20px;
-        margin-top: 6px;
+        margin-top: 18px;
         margin-left:-1px;
         margin-bottom:-1px;
     }
@@ -1652,12 +1677,12 @@
         display: flex;
         flex-direction: column;
         padding:0;
-        margin-left: 25px;
+        margin-left: 15px;
     }
 
     .popover-card-item {
         display: flex;
-        margin-top:15px;
+        margin-top:12px;
     }
 
     .popover-card-item:last-child {
@@ -1753,7 +1778,7 @@
         background-color: #FFFFFF;
         border: 1px solid rgba(0, 0, 0, 0.15);
         margin: auto;
-        margin-top: 370px;
+        margin-top: 396px;
     }
 
     .modal-serching-desc {
@@ -1799,6 +1824,7 @@
         height: 50px;
         margin:0;
         margin-bottom: 40px;
+        top: 5px;
     }
 
     .field {
@@ -1832,16 +1858,18 @@
 
     .check-date-arrive {
         position: absolute;
-        top: 45px;
+        top: 46px;
         left: 155px;
         height: 29px;
         color: rgba(255, 87, 87, 1);
+        font-size: 16px;
     }
 
     .check-date-departure {
         position: absolute;
         top: 45px;
         left: 155px;
+        font-size: 16px;
     }
 
     .date {
@@ -1880,7 +1908,7 @@
 
     .info:hover::before {
         z-index: 1;
-        font-family: PT Sans;
+        font-family: PT Sans, sans-serif;
         font-size: 16px;
         content: "Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.";
         width: 216px;
@@ -2049,5 +2077,5 @@
     }
 
     .modal-container-close {
-     display:none;
+     /* display:none; */
     }

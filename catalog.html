@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Каталог</title>
     <link rel="stylesheet" href = "style/style.css">
-    <link rel="icon" href="image/favicon.ico" width="32" height="32">
+    <link rel="icon" href="image/favicon.ico">
 </head>
 <body>
       <header class="page-header container">        
@@ -71,7 +71,7 @@
                       <a class="popover-card-link villas-link" href="#">
                         <img class="hotel-image" src="/image/popover-img/villas-icon.jpg" width="48" height="48" alt="Изображение Villas">
                         <div class="popover-description">
-                          <h4 class="popover-card-title">Villas at Poco Diablo</h4>
+                          <h3 class="popover-card-title">Villas at Poco Diablo</h3>
                           <b class="popover-card-type-living">Аппартаменты</b>
                         </div>
                       </a>
@@ -210,11 +210,13 @@
                   <h3 class="sorting-hotel-number">найдено гостиниц:</h3>
                   <span class="sorting-hotel">38</span>
                   <label class="visually-hidden" for="sorting">Сортировка</label>
-                  <select class="sorting-select-control" id="sorting" name="sorting">
-                  <option value="cheap">Сначала дешёвые</option>
-                 <option value="popular">Сначала популярные</option>
-                 <option value="expensive">Сначала дорогие</option>
-                 </select>
+                  <div class="sorting-select-container">
+                    <select class="sorting-select-control" id="sorting" name="sorting">
+                      <option value="cheap">Сначала дешёвые</option>
+                      <option value="popular">Сначала популярные</option>
+                      <option value="expensive">Сначала дорогие</option>
+                    </select>
+                  </div>
                   <button class="visually-hidden" type="submit">Отсортировать продукты</button>
                 </form>
                 <ul class="sorting-list">
@@ -254,7 +256,7 @@
                 </a>
                 <div class="hotel-card-description">
                   <a class="hotel-card-link title-link" href="#">
-                    <h4 class="hotel-card-title">Amara Resort & Spa</h4>
+                    <h3 class="hotel-card-title">Amara Resort & Spa</h3>
                   </a>
                   <b class="hotel-card-type-living">Гостиница</b>
                   <b class="hotel-card-price">От 4000 ₽</b>
@@ -274,7 +276,7 @@
                 </a>
                 <div class="hotel-card-description">
                   <a class="hotel-card-link title-link" href="#">
-                    <h4 class="hotel-card-title">Desert Quail Inn</h4>
+                    <h3 class="hotel-card-title">Desert Quail Inn</h3>
                   </a>              
                   <b class="hotel-card-type-living">Мотель</b>
                   <b class="hotel-card-price">От 3000 ₽</b>
@@ -294,7 +296,7 @@
                 </a>
                 <div class="hotel-card-description">
                   <a class="hotel-card-link title-link" href="#">
-                    <h4 class="hotel-card-title">Villas at Poco Diablo</h4>
+                    <h3 class="hotel-card-title">Villas at Poco Diablo</h3>
                   </a>
                   <b class="hotel-card-type-living">Апартаменты</b>
                   <b class="hotel-card-price">От 2000 ₽</b>
@@ -314,7 +316,7 @@
                 </a>
                 <div class="hotel-card-description">
                   <a class="hotel-card-link title-link" href="#">
-                  <h4 class="hotel-card-title">GreenTree Inn</h4>
+                  <h3 class="hotel-card-title">GreenTree Inn</h3>
                   </a>
                   <b class="hotel-card-type-living">Гостиница</b>
                   <b class="hotel-card-price">От 3000 ₽</b>
@@ -351,19 +353,21 @@
                   <a class="pagination-link last-page" href="#">10</a>
                 </li>
               </ul>
-              <label class="page-amount" for="pg">Гостиниц на странице:</label>
+              <div class="page-amount-container">
+                <label class="page-amount" for="pg">Гостиниц на странице:</label>
                 <select class="page-amount-number" name="page" id="pg">
-                 <option class="page-number" value="1">1</option>
-                 <option class="page-number" value="2">2</option>
-                 <option class="page-number" value="3">3</option>
-                 <option class="page-number" value="4" selected>4</option>
-                 <option class="page-number" value="5">5</option>
-                 <option class="page-number" value="6">6</option>
-                 <option class="page-number" value="7">7</option>
-                 <option class="page-number" value="8">8</option>
-                 <option class="page-number" value="9">9</option>
-                 <option class="page-number" value="10">10</option>
+                  <option class="page-number" value="1">1</option>
+                  <option class="page-number" value="2">2</option>
+                  <option class="page-number" value="3">3</option>
+                  <option class="page-number" value="4" selected>4</option>
+                  <option class="page-number" value="5">5</option>
+                  <option class="page-number" value="6">6</option>
+                  <option class="page-number" value="7">7</option>
+                  <option class="page-number" value="8">8</option>
+                  <option class="page-number" value="9">9</option>
+                  <option class="page-number" value="10">10</option>
                 </select>
+              </div>
             </div>
           </section>
           <section class ="mailing">
